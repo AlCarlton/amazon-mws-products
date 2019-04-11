@@ -1,6 +1,6 @@
 <?php
 /*******************************************************************************
- * Copyright 2009-2016 Amazon Services. All Rights Reserved.
+ * Copyright 2009-2018 Amazon Services. All Rights Reserved.
  * Licensed under the Apache License, Version 2.0 (the "License"); 
  *
  * You may not use this file except in compliance with the License. 
@@ -13,8 +13,8 @@
  * @category Amazon
  * @package  Marketplace Web Service Products
  * @version  2011-10-01
- * Library Version: 2015-09-01
- * Generated: Thu Mar 10 07:30:00 PST 2016
+ * Library Version: 2017-03-22
+ * Generated: Thu Oct 11 10:46:02 PDT 2018
  */
 
 interface  MarketplaceWebServiceProducts_Interface
@@ -130,6 +130,21 @@ interface  MarketplaceWebServiceProducts_Interface
      * @throws MarketplaceWebServiceProducts_Exception
      */
     public function getMatchingProductForId($request);
+
+
+    /**
+     * Get My Fees Estimate
+     * Retrieves the fees estimate for the
+     *         products identified by the given
+     *         ASIN/SKU list.
+     *
+     * @param mixed $request array of parameters for MarketplaceWebServiceProducts_Model_GetMyFeesEstimate request or MarketplaceWebServiceProducts_Model_GetMyFeesEstimate object itself
+     * @see MarketplaceWebServiceProducts_Model_GetMyFeesEstimateRequest
+     * @return MarketplaceWebServiceProducts_Model_GetMyFeesEstimateResponse
+     *
+     * @throws MarketplaceWebServiceProducts_Exception
+     */
+    public function getMyFeesEstimate($request);
 
 
     /**
